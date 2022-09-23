@@ -63,7 +63,7 @@ html {
 
 /* all similar content styling codes */
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .max-width {
   max-width: 1300px;
@@ -71,6 +71,7 @@ section {
   margin: auto;
 }
 .about,
+.services,
 .skills,
 .project,
 .contact,
@@ -78,6 +79,7 @@ footer {
   font-family: "Poppins", sans-serif;
 }
 .about .about-content,
+.services .serv-content,
 .skills .skills-content,
 .contact .contact-content {
   display: flex;
@@ -90,7 +92,7 @@ section .title {
   text-align: center;
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   padding-bottom: 20px;
   font-family: "Ubuntu", sans-serif;
 }
@@ -275,7 +277,51 @@ section .title::after {
   background-image: url("https://images.unsplash.com/photo-1523878288860-7ad281611901?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
   color: red;
 }
-
+/* services section styling */
+.services{
+  color: #fff;
+  background: #111;
+}
+.services .title::before{
+  background: #fff;
+}
+.services .title::after{
+  background: #111;
+}
+.services .serv-content .card {
+  width: calc(33% - 20px);
+  background: #222;
+  text-align: center;
+  border-radius: 6px;
+  padding: 50px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+.services .serv-content .card:hover {
+  background: #3f71f4;
+  color: #555;
+  /* change*/
+}
+.services .serv-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box {
+  transform: scale(1.05);
+}
+.services .serv-content .card i {
+  font-size: 50px;
+  color: ccorangered;
+  transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i {
+  color: #000;
+}
+.services .serv-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
 /* skills section styling */
 #skills{
     background-color: #545454;
@@ -336,6 +382,10 @@ section .title::after {
 .proj{
   border: 1px solid black;
   width: 40%;
+}
+#gitcal{
+  background-color: black;
+  color: white;
 }
 
 /* contact section styling */
