@@ -381,7 +381,7 @@ section .title::after {
 
 .proj{
   border: 1px solid black;
-  width: 40%;
+  width: 30%;
 }
 #gitcal{
   background-color: black;
