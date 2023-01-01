@@ -156,7 +156,7 @@ section .title::after {
   color: #fff;
   font-size: 18px;
   font-weight: 500;
-  margin-left: 25px;
+  margin-left: 20px;
   transition: color 0.3s ease;
 }
 .navbar .menu li a:hover {
@@ -192,8 +192,12 @@ section .title::after {
   width: 100%;
   display: flex;
 }
+
 .home .max-width .row {
   margin-right: 0;
+}
+.home .home-content {
+  margin-top: 50px;
 }
 .home .home-content .text-1 {
   font-size: 27px;
@@ -217,7 +221,7 @@ section .title::after {
   color: #fff;
   font-size: 25px;
   padding: 12px 36px;
-  margin-top: 20px;
+  margin-top: 25px;
   font-weight: 400;
   border-radius: 6px;
   border: 2px solid #3f71f4;
@@ -627,4 +631,10 @@ footer span a:hover {
     display: none;
   }
 }
+@media (max-width: 500px) {
+  .Pstate{
+    display: none;
+  }
+}
+
 
